@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shapes</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #456;
+        }
+        div{
+            display: inline-block;
+            margin: 20px;
+        }
+        .circle{
+            margin: 10px;
+            padding: 10px;
+            width:50px;
+            height: 50px;
+            background: linear-gradient(20deg, #31a031, #222222, #111111);
+            border-radius: 50%;
+            border: groove 30px rgba(190, 146, 2, 0.3);
+            box-shadow: #987 12px 42px 2px;
+        }
+        .triangle{
+            width: 120px;
+            height: 0px;
+            border: ridge 100px;
+            border-color: rgb(48, 118, 187) #993333 #127645 #872314;
+        }
+        .pacman{
+            width: 0px;
+            height: 0px;
+            /* background: rgba(255, 240, 25, 0.5); */
+            border: double 100px;
+            border-color: yellow transparent yellow yellow;
+            border-radius: 50%;
+            box-shadow: rgb(119, 115, 67) 6px 5px 5px;
+        }
+        .five{
+            width: 0;
+            height: 0;
+            border-left: solid 100px transparent;
+            border-right: solid 100px transparent;
+            border-bottom: solid 70px #934;
+            transform: rotateZ(35deg);
+        }
+        .five::before{
+            position: absolute;
+            display: block;
+            content: "";
+            width: 0;
+            height: 0;
+            top:-45px;
+            left: -65px;
+            border-left: solid 30px transparent;
+            border-right: solid 30px transparent;
+            border-bottom: solid 80px #934;
+            transform: rotateZ(-35deg);
+        }
+        .five::after{
+            position: absolute;
+            display: block;
+            content: "";
+            width: 0;
+            height: 0;
+            top:3px;
+            left: -105px;
+            border-left: solid 100px transparent;
+            border-right: solid 100px transparent;
+            border-bottom: solid 70px #934;
+            transform: rotateZ(-70deg);
+        }
+        .six{
+            position:absolute;
+            width: 0;
+            height: 00;
+            border-left:solid 80px transparent;
+            border-right: solid 80px transparent;
+            border-bottom: solid 160px green;
+        }
+        .six::after{
+            position: absolute;
+            content: '';
+            width: 0;
+            height: 00;
+            top:52px;
+            left:-80px;
+            border-left:solid 80px transparent;
+            border-right: solid 80px transparent;
+            border-bottom: solid 160px green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="circle"></div>
+    <div class="triangle"></div>  
+    <div class="pacman"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+
+</body>
+</html>

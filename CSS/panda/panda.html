@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            background-color: #ffe680;
+            margin: 0;
+            padding:0;
+        }
+        .panda{
+            position: absolute;
+            top:40%;
+            left: 43%;
+            height:120px;
+            width: 80px;
+            background-color: white;
+            border:5px solid black;
+            border-radius: 30%;
+            box-shadow: rgb(88, 81, 81) 2px 2px 2px;
+            z-index: 0;
+        }
+        .face{
+            position: relative;
+            background-color: white;
+            border:5px solid black;
+            height:90px;
+            width: 110px;
+            border-radius: 50%;
+            bottom:30px;
+            right:20px;
+        }
+        .ear-l, .ear-r{
+            position:relative;
+            background-color:black;
+            height: 25px;
+            width:40px;
+            border-radius: 0px 0px 40px 40px;
+        }
+        .ear-l{
+            transform: rotate(145deg);
+            bottom:13px;
+            right: 8px;
+        }
+        .ear-r{
+            transform: rotate(-145deg);
+            left:78px;
+            bottom:38px;
+        }
+        .center{
+            position:relative;
+            background-color:white;
+            height: 8px;
+            width:20px;
+            border-radius: 0px 0px 40px 40px;
+        }
+        .center{
+            top:5px;
+            left:10px;
+        }
+        .eye-l, .eye-r{
+            position:relative;
+            background-color:black;
+            height: 33px;
+            width:28px;
+            border-radius: 50%;
+        }
+        .eye-l{
+            bottom:30px;
+            left:10px;
+            transform: rotate(25deg);
+        } 
+        .eye-r{
+            bottom:63px;
+            left:72px;
+            transform: rotate(-25deg);
+        }
+        .eyeball{
+            position: relative;
+            top:8px;
+            left:7px;
+            width:14px;
+            height: 14px;
+            background: white;
+            border-radius: 50%;
+        }
+        .nose{
+            position: relative;
+            height: 18px;
+            width: 20px;
+            background: black;
+            bottom:70px;
+            left:45px;
+            border-radius: 45%;
+        }
+        .arm-l, .arm-r{
+            position: relative;
+            height: 20px;
+            width: 40px;
+            background: black;
+            border-radius: 30px;
+        }
+       
+        .arm-r{
+            
+            bottom:60px;
+            left:79.5px;
+
+        }
+        .arm-l{
+            transform: rotate(90deg);
+            bottom:45px;
+            right:25px;
+            animation: wave 3s infinite;
+            transform-origin: bottom;
+        }
+        .leg-r, .leg-l{
+            position:relative;
+            background:black;
+            width:17px;
+            height: 25px;
+            border-radius: 0px 0px 30px 30px;
+        }
+        .leg-l{
+             bottom:17px;
+             left:15px;
+             z-index: -1;
+        }
+        @keyframes wave{
+            50%{
+                transform: rotate(40deg);
+            }
+        }
+        .leg-r{
+            bottom:42px;
+            left:49px;
+            z-index:2;
+        }
+        .shadow{
+            position:relative;
+            background-color: rgba(0, 0, 0,0.5);
+            height:30px;
+            width: 100px;
+            border-radius: 50%;
+            bottom:30px;
+            right: 10px;
+            animation: shadow 3s infinite ease-in;
+        }
+        @keyframes shadow{
+            50%{
+                transform: skew(40deg); 
+            }
+        }
+        .guitar{
+            position: relative;
+            background-color: rgb(218, 123, 34);
+            height:40px;
+            width: 55px;
+            border-radius: 50% 25%;
+            bottom:150px;
+            left:1px;
+            z-index: -1;
+            transform: rotate(10deg);
+        }
+        .guitarback{
+            position: relative;
+            background-color:  rgb(217, 157, 40);
+            height:40px;
+            width: 55px;
+            border-radius: 50% 25%;
+            bottom:185px;
+            left:1px;
+            z-index: -2;
+            transform: rotate(10deg);
+        }
+        .hole{
+            position: relative;
+            background-color:rgb(80, 70, 51);
+            height:20px;
+            width: 20px;
+            border-radius: 40px;
+            bottom:-10px;
+            left:19px;
+            z-index:1;
+        }
+        .fingerboard{
+            position: relative;
+            background-color: rgb(218, 123, 34);
+            height:15px;
+            width: 60px;
+            border-radius: 50% 25%;
+            bottom:30px;
+            left:35px;
+            z-index:3;
+            transform: rotate(-30deg);
+        }
+    </style>
+    <title>Panda!</title>
+</head>
+<body>
+    <div class="panda">
+        <div class="face">
+            <div class="ear-l">
+                <div class="center"></div>
+            </div>
+            <div class="ear-r">
+                    <div class="center"></div>
+            </div>
+            <div class="eye-l">
+                <div class="eyeball"></div>
+            </div>
+            <div class="eye-r">
+                <div class="eyeball"></div>
+            </div>
+            <div class="nose"></div>
+        </div>
+        <div class="arm-l"></div>
+        <div class="arm-r"></div>
+        <div class="leg-l"></div>
+        <div class="leg-r"></div>
+        <div class="shadow"></div>
+        <div class="guitar">
+            <div class="hole"></div>
+            <div class="fingerboard"></div>
+        </div>
+        <div class="guitarback"></div>
+    </div>
+    
+</body>
+</html>

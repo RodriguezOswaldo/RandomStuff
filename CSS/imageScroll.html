@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Scroll From Top to Bottom On Hover by Online tutorials</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr; */
+            min-height: 100vh;
+        }
+        .container{
+            width: 1200px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .container .box{
+            width:580px;
+            height: 400px;
+            background: #000;
+            transition: ease-in 5s;
+        }
+        .container .box.box1{
+            background-image: url(https://source.unsplash.com/random/580x2400);
+            background-size: cover;
+        }
+        .container .box.box2{
+            background-image: url(https://source.unsplash.com/random/580x2399);
+            background-size: cover;
+        }
+        .container .box.box3{
+            background-image: url(https://source.unsplash.com/random/580x2389);
+            background-size: cover;
+        }
+        .container .box.box4{
+            background-image: url(https://source.unsplash.com/random/580x2398);
+            background-size: cover;
+        }
+        .container .box:hover{
+            background-position: bottom;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+</html>

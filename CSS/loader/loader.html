@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis/com/css?family=Poppins:500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Loader</title>
+    <style>
+        html{
+            box-sizing:border-box;
+        }
+        *, *::before, *::after{
+            padding: 0;
+            margin:0;
+            box-sizing: inherit;
+        }
+        body{
+            background-color: #00005f;
+            height: 100vh;
+            width: 100vh;
+            display: flex;
+        }
+        input[type="radio"]{
+            -webkit-appearance: none;
+        }
+        label{
+            height: 180px;
+            width:240px;
+            border:6px solid #18a6f9;
+            position: relative;
+            margin:auto;
+            border-radius: 10px;
+            color: #18f98d;
+            transition:0.7s;
+        }
+        .fa{
+            font-size: 80px;
+            position: absolute;
+            top:50%; left: 50%;
+            transform: translate(-50%, -80%);
+        }
+        label>span{
+            font-size: 25px;
+            position: absolute;
+            top:50%; left: 50%;
+            transform: translate(-50%, 80%);
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+        }
+        input[type="radio"]:checked + label{
+            background: #18f98d;
+            color: #18a6f9;
+            box-shadow: 0 15px 45px rgba(24, 249, 141, 0.2);
+        }
+    
+    
+    </style>
+
+</head>
+<body>
+    <input type="radio" name="payment" id="card">
+    <label for="card">
+        <i class="fa fa-credit-card"></i>
+        <span>Card</span>
+    </label>
+    <input type="radio" name="payment" id="cash">
+    <label for="cash">
+            <i class="fa fa-money"></i>
+            <span>Cash</span>
+
+    </label>
+</body>
+</html>

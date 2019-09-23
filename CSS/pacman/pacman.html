@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pac-Man</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background: #333;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .mouth {
+            float: left;
+        }
+
+        .one {
+            border: 30px solid whitesmoke;
+            border-radius: 50%;
+            position: relative;
+            top: -30px;
+            border-bottom: 30px solid transparent;
+            border-left: 30px solid transparent;
+            transform: rotate(-45deg);
+            animation: moveone 0.5s linear infinite;
+        }
+
+        .two {
+            border: 30px solid whitesmoke;
+            border-radius: 50%;
+            top: -90px;
+            position: relative;
+            border-top: 30px solid transparent;
+            border-left: 30px solid transparent;
+            transform: rotate(45deg);
+            animation: movetwo 0.5s linear infinite;
+        }
+
+        .food {
+            float: left;
+        }
+
+        .food div {
+            position: absolute;
+            height: 20px;
+            top: -10px;
+            left: 100px;
+            width: 20px;
+            border-radius: 50%;
+            background: white;
+            animation: movefood 4s linear infinite;
+        }
+
+        @keyframes moveone {
+
+            0%,
+            100% {
+                transform: rotate(-45deg);
+            }
+
+            100% {
+                transform: rotate(-90deg);
+
+            }
+
+        }
+
+        @keyframes movetwo {
+
+            0%,
+            100% {
+                transform: rotate(45deg);
+            }
+
+            100% {
+                transform: rotate(90deg);
+            }
+        }
+
+        @keyframes movefood {
+            0% {
+                left: 200px;
+            }
+
+            100% {
+                left: -5px;
+            }
+        }
+        .food div:nth-child(1){
+            animation-delay: 0s;
+        }
+        .food div:nth-child(2){
+            animation-delay: 1s;
+        }
+        .food div:nth-child(3){
+            animation-delay: 2s;
+        }
+        .food div:nth-child(4){
+            animation-delay: 3s;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mouth">
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+        <div class="food">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

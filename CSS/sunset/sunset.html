@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sunset</title>
+    <style>
+    body{
+        background-color: #e1b12c;
+        margin:0;
+        overflow-y: hidden;
+        animation: sky 5.5s 2s forwards;
+    }
+    @keyframes sky{
+        50%{
+            background-color: #ffd700;
+        }
+        65%{
+            background-color: #ffb90f;
+        }
+        85%{
+            background-color: #b39800;
+        }
+        100%{
+            background-color: #68228b;
+        }
+    }
+    img{
+        position: absolute;
+        display: flex;
+    }
+    .sun{
+        background-color:#ff8c1a;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: relative;
+        left:50%;
+        box-shadow: 0px 0px 20px 5px #ff8c1a; 
+        animation: sunset 12s forwards;
+    }
+    @keyframes sunset{
+        100%{
+            transform: translateY(700px);
+        }
+    }
+    .moon{
+        background-color: transparent;
+        height:100px;
+        width: 100px;
+        border-radius: 50%;
+        /* background: white; */
+        box-shadow: -20px 20px  white;
+        position: absolute;
+        left:10%;
+        top:5%;
+        opacity: 1;
+        animation:night 0.8s 7s forwards;
+    }
+    @keyframes night{
+        100%{
+            opacity: 1;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+    <img src="/CSS/sunset/img.png" width="100%">
+    <div class="moon"></div>
+    <script>
+    //Mitali
+    //https://flatuicolors.com/
+    </script>
+</body>
+</html>

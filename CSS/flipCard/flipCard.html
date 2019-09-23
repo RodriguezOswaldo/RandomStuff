@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <title>Flip Card!</title>
+    <style>
+        body,
+        html {
+            margin: 0px;
+            padding: 0px;
+            background-color: #eee;
+            font-family: 'Lora', serif;
+        }
+
+        #maincontainer {
+            width:240px;
+            height: 335px;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #card{
+            position: absolute;
+            height: 100%;
+            width:100%;
+            background-color: #fff; 
+            transform-style: preserve-3d;
+            transition:-5s ease;
+            backface-visibility: hidden; 
+        }
+        .front{
+            position: absolute;
+            height: 100%;
+            width:100%;
+            background: #aaa;
+            backface-visibility: hidden;
+            color:black;
+            text-align: center;
+        }
+        .front h2{
+            margin-bottom: 5px;
+        }
+        #back{
+            position: absolute;
+            height: 100%;
+            width:100%;
+            background-color:#1e76e3;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+            z-index: 999;
+            box-shadow: 2px 3px 3px gray, -1px 2px 3px gray; 
+            color:#fff;
+            line-height: 1.4;
+            font-size: 18px;
+        }
+        #back h2{
+            margin:5px;
+            line-height: 1.3;
+            text-decoration: underline;
+        }
+
+        .fa-area-chart {
+            margin-top: 40px; 
+            font-size: 150px;
+            animation: icon 5s infinite ease-in;
+        }
+        .fa-area-chart{
+            backface-visibility: hidden;
+        }
+        label i{
+            color:grey;
+            margin-left: 30px;
+        }
+        #card:hover{
+            transform: scale(1.1, 1.1);
+            box-shadow: 0 14px 29px rgba(0,0,0,0.24), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        @keyframes icon{
+           50% {
+                transform:scale(1.1);
+            }
+            0%, 100%{
+                transform:scale(1);
+
+            }
+        }
+        .button{
+            width:50%;
+            height: auto;
+            padding: 10px;
+            background-color: #91DABF;
+            float:left;
+            display: inline;
+            box-sizing: border-box;
+         }
+         .button:hover{
+            transform: scale(1.2, 1.2);
+            box-shadow: 0 14px 29px rgba(0,0,0,0.24), 0 10px 10px rgba(0,0,0,0.22);
+        }
+         input{
+             display: none;
+         }
+         input[id="change"]:checked ~ #card{
+             transform: rotateY(-180deg);
+         }
+         label[for="change"]{
+             cursor: pointer;
+         }
+         #back p {
+            padding: 0em 1em;
+         }
+         .details{
+             width:100%;
+             height: auto;
+             display: grid;
+             grid-template-columns: 1fr 2fr;
+             box-sizing:border-box;
+             padding:.3em;
+         }
+         .type{
+             text-align: center;
+         }
+         .property span{
+             padding-left: 10px;
+             margin:0;
+         }
+         .button{
+             margin:15px;
+             padding:10px;
+             font-size:18px;
+             font-weight: 600;
+             border:2px solid grey;
+             border-radius: 10px;
+             box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+             cursor: pointer;
+         }
+    </style>
+</head>
+
+<body>
+    <div id="maincontainer">
+        <input type="checkbox" name="change" id="change">
+        <input type="checkbox" name="cart" id="cart">
+        <div id="card">
+            <div class="front">
+            <span class="fa fa-area-chart" title="chart"></span>
+            <h2>500$</h2>
+            <div class="buttons">
+                <label for="change" class="button"><i class="fa fa-shopping-cart fa-2x"></i></label>
+                <label for="cart" class="button"><i class="fas fa-money-bill fa-2x"></i></label>
+            </div>
+            <div id="back">
+                <h2>SHOE</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
+                    dipisci, quam nemo. Saepe, sit aperiam perferendis eligendi ipsu
+                    m placeat esse tempora! Temporibus ea hic minima autem c
+                    umque maxime facilis exercitationem veritatis!</p>
+                <div class="details">
+                    <div class="type"></div>
+                    <div class="property">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+
+                </div>
+                <div class="details">
+                    <div class="type"></div>
+                    <div class="property">
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="type">Color: </div>
+                    <div class="property">Black </div>
+                </div>
+                <button>BUY NOW</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('maincontainer').addEventListener("mouseleave", function(){
+            document.getElementById("change").checked = false;
+        })
+    </script>
+</body>
+
+</html>

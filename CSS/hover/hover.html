@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation on Hover</title>
+    <style>
+        body {
+            background-color: #262626;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            height: 450px;
+            width: 450px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .crc1,
+        .crc {
+            height: 400px;
+            width: 90px;
+            border: 3px solid white;
+            position: relative;
+            border-radius: 50%;
+            transition: 3.5s linear;
+            transform-style: preserve-3d;
+        }
+
+        .crc1 {
+            top: 25px;
+            left: 190px;
+            cursor: pointer;
+        }
+
+        .crc {
+            bottom: 3px;
+            right: 3px;
+        }
+
+        .crc1:hover {
+            animation: spin 8s infinite linear forwards;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+                border: 3px solid green;
+            }
+        }
+
+        .crc1:hover .crc {
+            transform: rotate(15deg);
+            border: 3px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="crc1">
+            <div class="crc">
+                <div class="crc">
+                    <div class="crc">
+                        <div class="crc">
+                            <div class="crc">
+                                <div class="crc">
+                                    <div class="crc">
+                                        <div class="crc">
+                                            <div class="crc">
+                                                <div class="crc">
+                                                    <div class="crc">
+                                                        <div class="crc">
+                                                            <div class="crc">
+                                                                <div class="crc">
+                                                                    <div class="crc">
+                                                                        <div class="crc">
+                                                                            <div class="crc">
+                                                                                <div class="crc">
+                                                                                    <div class="crc">
+                                                                                        <div class="crc">
+                                                                                            <div class="crc">
+                                                                                                <div class="crc">
+                                                                                                    <div class="crc">
+
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

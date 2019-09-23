@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive</title>
+    <style>
+        body {
+            font: 15px/1.5 Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .button_1 {
+            height: 30px;
+            background: #e8491d;
+            border: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #fff;
+        }
+
+        .dark {
+            padding: 15px;
+            background: #35424a;
+            color: #fff;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Header */
+        header {
+            background: #35424a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight,
+        header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+
+        header a:hover {
+            color: #cccccc;
+            font-weight: bold;
+        }
+
+        /*show case */
+
+        #showcase {
+            min-height: 400px;
+            background: url(photo.jpg)no-repeat;
+            text-align: center;
+            color: rgb(65, 55, 55);
+        }
+
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-top: 10px;
+        }
+
+        #showcase p {
+            font-size: 20px;
+        }
+
+        #newsletter {
+            padding: 10px;
+            color: #fff;
+            background: #35424a;
+        }
+
+        #newsletter h1 {
+            float: left;
+        }
+
+        #newsletter form {
+            float: right;
+            margin-top: 30px;
+        }
+
+        #newsletter input[type='email'] {
+            padding: 3px;
+            height: 25px;
+            width: 250px;
+        }
+
+        /* boxes */
+        #boxes {
+            margin-top: 20px;
+        }
+
+        #boxes .box {
+            float: left;
+            width: 30%;
+            padding: 10px;
+        }
+
+        #boxes .box img {
+            width: 90%;
+        }
+
+        /* sidebar */
+
+        aside#sidebar {
+            float: right;
+            width: 30%;
+            margin-top: 10px;
+        }
+        aside#sidebar .quote input, aside#sidebar .quote textarea{
+            width: 90%;
+            padding: 5px;
+        }
+        /* services */
+        ul#services li{
+            list-style: none;
+            padding:20px;
+            border: #cccccc solid 1px;
+            margin-bottom: 5px;
+            background:  #e6e6e6;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #fff;
+            background: #e8491d;
+            text-align: center;
+        }
+
+        article#main-col {
+            float: left;
+            width: 65%;
+        }
+        /* Media Query */
+        @media(max-width:768px){
+            header #branding,
+            header nav,
+            header nav li,
+            #newsletter h1,
+            #newsletter form,
+            #boxes .box,
+            article#main-col,
+            aside#sidebar
+            {
+                float:none;
+                text-align: center;
+                width:100%;
+            }
+            header{
+                padding-bottom: 20px;
+            }
+            #showcase h1{
+                margin-top: 40px;
+            }
+            #newsletter button, .quote button{
+                display: block;
+                width:100%;
+            }
+            #newsletter form input[type="email"],
+            .quote input, .quote textarea{
+                width:100%;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1> <span class="highlight"> Acme</span> Web Design</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="current"><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="container">
+            <h1>Afordable Professional Website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, tempora.</p>
+        </div>
+    </section>
+    <div id="newsletter">
+        <div class="container">
+            <h1>Subscribe to our Newsletter</h1>
+            <form action="POST">
+                <input type="email" placeholder="Enter email...">
+                <button type="submit" class="button_1">Suscribe</button>
+            </form>
+        </div>
+    </div>
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">Services</h1>
+                <ul id="services">
+                    <li>
+                        <h3>Website Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa, beatae blanditiis, ullam provident, aut cupiditate odit totam illum laboriosam magni. Velit ut delectus nisi ratione aliquid consequuntur ab non.</p>
+                        <p>Pricing: $1,000 - $3,000</p>
+                    </li>
+                    <li>
+                            <h3>Website Maintenance</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa, beatae blanditiis, ullam provident, aut cupiditate odit totam illum laboriosam magni. Velit ut delectus nisi ratione aliquid consequuntur ab non.</p>
+                            <p>Pricing: $250 per month</p>
+                        </li>
+                        <li>
+                                <h3>Website Hosting</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores culpa, beatae blanditiis, ullam provident, aut cupiditate odit totam illum laboriosam magni. Velit ut delectus nisi ratione aliquid consequuntur ab non.</p>
+                                <p>Pricing: $25 per month</p>
+                            </li>
+                </ul>
+              
+            </article>
+            <aside id="sidebar">
+                <div class="dark">
+                   <h3>Get A Quote</h3>
+                   <form action="" class="quote">
+                       <div>
+                           <label for="">Name</label><br>
+                           <input type="text" placeholder="Name">
+                       </div>
+                       <div>
+                           <label for=>Email</label><br>
+                           <input type="email" placeholder="Email Address">
+                       </div>
+                       <div>
+                           <label for="">Message</label>
+                           <textarea placeholder="Message"></textarea>   
+                       </div>
+                       <button class="button_1" type="submit">Send</button>
+                   </form>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <p>Acme Web Design, Copyright &copy; 2019</p>
+    </footer>
+</body>
+
+</html>

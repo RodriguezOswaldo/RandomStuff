@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="swiper.min.css">
+    <title>Slider</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,700');
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #153535;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card {
+            position: relative;
+            background: #fff;
+            width: 400px;
+            height: 500px;
+            margin: 0 auto;
+        }
+
+        .card .content {
+            width: 400px;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .card .sliderText {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+
+        .card .sliderText h3 {
+            color: #fff;
+            font-size: 3rem;
+        }
+
+        .card .content a {
+            display: inline-block;
+            margin: 10px 0 0;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 2px solid #262626;
+            color: #262626;
+            font-weight: 600;
+        }
+
+        .card .sliderText {
+            position: relative;
+            width: 100%;
+        }
+
+        .swiper-slide {
+            width: 400px;
+        }
+
+        .swiper-slide:nth-child(1) .sliderText {
+            background: #2196f3;
+        }
+
+        .swiper-slide:nth-child(2) .sliderText {
+            background: #e91e63;
+        }
+
+        .swiper-slide:nth-child(3) .sliderText {
+            background: #c3d41a;
+        }
+
+        .swiper-slide:nth-child(4) .sliderText {
+            background: #ff9800;
+        }
+
+        .swiper-slide:nth-child(5) .sliderText {
+            background: #c33ada;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">-
+
+                <div class="card">
+                    <div class="sliderText">
+                        <h3>Slide One</h3>
+                    </div>
+                    <div class="content">
+                        <img src="https://source.unsplash.com/random/300x200" alt="">
+                        <a href="">Read More</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide">-
+
+                    <div class="card">
+                        <div class="sliderText">
+                            <h3>Slide Two</h3>
+                        </div>
+                        <div class="content">
+                                <img src="https://source.unsplash.com/random/300x201" alt="">
+                            <a href="">Read More</a>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="swiper-slide">-
+    
+                    <div class="card">
+                        <div class="sliderText">
+                            <h3>Slide Three</h3>
+                        </div>
+                        <div class="content">
+                                <img src="https://source.unsplash.com/random/300x202" alt="">
+                            <a href="">Read More</a>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="swiper-slide">-
+    
+                    <div class="card">
+                        <div class="sliderText">
+                            <h3>Slide Four</h3>
+                        </div>
+                        <div class="content">
+                                <img src="https://source.unsplash.com/random/300x203" alt="">
+                            <a href="">Read More</a>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="swiper-slide">-
+    
+                    <div class="card">
+                        <div class="sliderText">
+                            <h3>Slide Five</h3>
+                        </div>
+                        <div class="content">
+                                <img src="https://source.unsplash.com/random/300x204" alt="">
+                            <a href="">Read More</a>
+                        </div>
+    
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 30,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>

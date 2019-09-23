@@ -47,8 +47,12 @@
             right: 3px;
         }
 
-        .crc1:hover {
+        .crc1 {
             animation: spin 8s infinite linear forwards;
+        }
+
+        .crc1 .crc {
+            animation: spin2 8s infinite linear forwards;
         }
 
         @keyframes spin {
@@ -58,9 +62,11 @@
             }
         }
 
-        .crc1:hover .crc {
-            transform: rotate(15deg);
-            border: 3px solid green;
+        @keyframes spin2 {
+            100% {
+                transform: rotate(15deg);
+                border: 3px solid green;
+            }
         }
     </style>
 </head>

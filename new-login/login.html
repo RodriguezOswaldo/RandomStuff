@@ -52,13 +52,19 @@
         .loginbox input[type="text"], input[type="email"]{
             margin: 0 auto 20px auto; 
             text-align: center;
-            width: 85%;
+            width: 78%;
             border: none;
             background: transparent;
             outline: none;
             border-bottom: 1px solid #199;
             font-size: 1.2em;
             font-family: 'Courier New', Courier, monospace;
+        }
+        .loginbox input[type="email"]:focus,
+         .loginbox input[type="text"]:focus {
+            width: 95%;
+            border-color: #2ecc71;
+            transition: 1.5s;
         }
         .loginbox input[type="submit"]{
             margin: 0 auto 20px auto; 
@@ -69,6 +75,11 @@
             border:none;
             font-size:1.3em;
             color:#fff;
+        }
+        .loginbox input[type="submit"]:active{
+            border: 1px solid #fff;
+            background:turquoise;
+            color:tomato;
         }
         .fas{
             color:white;
@@ -85,6 +96,11 @@
             font-size:1.3em;
             color:#199;
         }
+        button:focus{
+            border: 1px solid #fff;
+            background:turquoise;
+            color:tomato;
+        }
     </style>
 </head>
 <body>
@@ -92,7 +108,7 @@
         <div class="icon"><i class='fas fa-fingerprint'></i></div>
         <h1>Login</h1>
         <form action="">
-            <label for="emailAddress">Email Address:</label><input required type="email" name="emailAddress" id="emailAddress" placeholder="email@something.com">
+            <label for="emailAddress">Email Address:</label><input required type="email" name="emailAddress" id="emailAddress" placeholder="email@something.com"><br>
             <label for="customerPassword">Password:</label><input required type="text" name="customerPassword" id="customerPassword" placeholder="password">
             <label for="signIn"></label><input type="submit" name="sign in" id="signIn" value="Sign In"><br>
             <label for="notAMember">Not a member?</label><br><button onclick="window.location='/dashboard/acme/accounts/index.php?action=registration'">Sign up</button>

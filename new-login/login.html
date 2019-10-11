@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <style>
         /* https://www.youtube.com/watch?v=OWNxUVnY3pg*/
         body{
@@ -55,7 +56,22 @@
             border-bottom: 1px solid #199;
         }
         .loginbox input[type="submit"]{
-            margin: 20px auto 20px auto; 
+            margin: 0 auto 20px auto; 
+            text-align: center;
+            width: 55%;
+            border-radius: 10px;
+            background: #fff;
+            border:none;
+            font-size:1.3em;
+            color:#199;
+        }
+        .fas{
+            color:white;
+            font-size: 3em;
+            margin-top: 25%;
+        }
+        button{
+            margin: 0 auto 20px auto; 
             text-align: center;
             width: 55%;
             border-radius: 10px;
@@ -63,19 +79,18 @@
             border:none;
             font-size:1.3em;
             color:white;
-            
         }
     </style>
 </head>
 <body>
     <div class="loginbox">
-        <div class="icon"></div>
+        <div class="icon"><i class='fas fa-arrow-circle-right'></i></div>
         <h1>Login</h1>
         <form action="">
             <label for="emailAddress">Email Address:</label><input required type="email" name="emailAddress" id="emailAddress" placeholder="email@something.com">
             <label for="customerPassword">Password:</label><input required type="text" name="customerPassword" id="customerPassword" placeholder="password">
             <label for="signIn"></label><input type="submit" name="sign in" id="signIn" value="Sign In"><br>
-            <label for="notAMember">Not a member?</label><button onclick="window.location='/dashboard/acme/accounts/index.php?action=registration'">Sign up</button>
+            <label for="notAMember">Not a member?</label><br><button onclick="window.location='/dashboard/acme/accounts/index.php?action=registration'">Sign up</button>
         </form>
 
     </div>

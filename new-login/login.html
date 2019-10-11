@@ -7,7 +7,9 @@
     <title>Login</title>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <style>
-        /* https://www.youtube.com/watch?v=OWNxUVnY3pg*/
+        /* https://www.youtube.com/watch?v=OWNxUVnY3pg
+            https://www.w3schools.com/icons/fontawesome5_icons_interfaces.asp
+        */
         body{
             margin:0;
             padding:0;
@@ -45,6 +47,7 @@
             padding:0;
             font-weight:bold;
             text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         .loginbox input[type="text"], input[type="email"]{
             margin: 0 auto 20px auto; 
@@ -54,16 +57,18 @@
             background: transparent;
             outline: none;
             border-bottom: 1px solid #199;
+            font-size: 1.2em;
+            font-family: 'Courier New', Courier, monospace;
         }
         .loginbox input[type="submit"]{
             margin: 0 auto 20px auto; 
             text-align: center;
             width: 55%;
             border-radius: 10px;
-            background: #fff;
+            background: #199;
             border:none;
             font-size:1.3em;
-            color:#199;
+            color:#fff;
         }
         .fas{
             color:white;
@@ -75,16 +80,16 @@
             text-align: center;
             width: 55%;
             border-radius: 10px;
-            background: #199;
+            background: #fff;
             border:none;
             font-size:1.3em;
-            color:white;
+            color:#199;
         }
     </style>
 </head>
 <body>
     <div class="loginbox">
-        <div class="icon"><i class='fas fa-arrow-circle-right'></i></div>
+        <div class="icon"><i class='fas fa-fingerprint'></i></div>
         <h1>Login</h1>
         <form action="">
             <label for="emailAddress">Email Address:</label><input required type="email" name="emailAddress" id="emailAddress" placeholder="email@something.com">

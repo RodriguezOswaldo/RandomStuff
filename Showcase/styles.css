@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Mansalva';
+}
+body{
+    font-family: tahoma;
+    font-size: 15px;
+    line-height: 1.75;
+    margin:0;
+    padding:0;
+}
+#timeline{
+    display: flex;
+    background-color: #031725;
+}
+#timeline:hover .item{
+    width: 23.333%;
+}
+.item{
+    transform: translate3d(0,0,0);
+    position: absolute;
+    width: 25%;
+    height: 100vh;
+    min-height: 600px;
+    color:white;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+.bg{
+    background-image: url('https://source.unsplash.com/random/300x204')
+}

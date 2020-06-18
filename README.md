@@ -8,3 +8,4 @@ Images: https://source.unsplash.com/random/300x204
 Fonts: https://fonts.google.com/specimen/Mansalva
 Color: https://coolors.co/
 Icons: https://www.w3schools.com/icons/fontawesome_icons_text.asp
+CSS Shapes http://thewebahead.net/

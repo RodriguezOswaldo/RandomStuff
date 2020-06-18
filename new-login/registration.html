@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background:#991;
+        }
+        .wrap{
+            max-width: 350px;
+            border-radius: 20px;
+            margin:auto;
+            text-align: center;
+            box-sizing: border-box;
+            background: rgba(0, 2,0,0.8);
+            padding:20px;
+            color:#fff;
+            margin-top:40px;
+        }
+        form label{
+            left:0;
+        }
+        form input{
+            right:0;
+        }
+        h2{
+            text-align: center;
+        }
+        input[type="text"], input[type="email"]{
+            width:80%;
+            box-sizing:  border-box;
+            padding:12px 5px;
+            background: rgba(0,0,0,0.10);
+            outline: none;
+            border:none;
+            border-bottom: 1px dotted #fff;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h2>Sign Up</h2>
+        <form action="POST">
+            <label for="clientFirstName"><span>*</span> First Name:</label><input name="clientFirstname" id="clientFirstname" type="text"><br>
+            <label for="clientLastName"><span>*</span> Last Name:</label><input name="clientLastName" id="clientLastName" type="text"><br>
+            <label for="clientEmail"><span>*</span> Email:</label><input name="clientEmail" id="clientEmail" type="email"><br>
+            <label for="clientPassword"><span>*</span> Password:</label><input name="clientPassword" id="clientPassword" type="text"><br>
+            <input type="submit" value="Sign Up"> 
+        </form>
+
+    </div>
+</body>
+</html>

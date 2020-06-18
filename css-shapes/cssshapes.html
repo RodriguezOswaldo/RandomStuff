@@ -7,10 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        body {
-            background: #445;
-        }
-
         html {
             margin: 0;
             padding: 0;
@@ -19,9 +15,10 @@
         .nav {
             display: flex;
             align-items: center;
-            background: #921;
+            background: rgba(145, 93, 85, 0.5);
             padding: 10px 0;
             margin-top: 0;
+            margin-bottom: 0;
         }
 
         .link {
@@ -34,7 +31,7 @@
 
         .link:hover {
             background: black;
-            color: #921;
+            color: rgb(145, 93, 85);
             display: block;
             transform: scale(1.2);
             font-size: 1.2em;
@@ -42,11 +39,12 @@
 
         .selected {
             background: black;
-            color: #921;
+            color: rgb(145, 93, 85);
+
         }
 
         .selected:hover {
-            background: #922;
+            background: rgb(145, 93, 85);
             color: white;
         }
 
@@ -54,6 +52,17 @@
             display: block;
         }
 
+        .section1, .section3{
+            background: rgba(145, 93, 85, 0.5);
+            padding:20px;
+            margin:0;
+            max-width:100%;
+        }
+        .section2, .section4{
+            background: rgba(164, 192, 111, 0.322);
+            padding:20px;
+            margin:0;
+        }
         .section1 img {
             float: left;
             clear:left;
@@ -79,9 +88,39 @@
             shape-outside: border-box;
             shape-margin: 30px;
         }
-    
+        .section4 img {
+            float: right;
+            transform: rotateZ(45deg);
+            margin-left: 18m;
+            border-radius: 20%;
+            shape-outside: polygon(50% 0,
+                                    100% 0,
+                                    50% 100%,
+                                    0 50%, 
+                                    10% 50% );
+        }
+        header{
+            height: 100vh;
+            display: flex;
+            }
+            header img{
+                width: 100%;
+                height: 100vh;
+            }
+            header h1{
+                position: absolute;
+                bottom:10px;
+                background: rgba(145, 93, 85, 0.2);
+                font-size:9vw;
+                color:rgb(72, 108, 138);
+                opacity: 1;
+                align-items: flex-end;
+                padding:20px;
+                transform: rotateY(20deg);
+            }
     </style>
 </head>
+
 
 <body>
     <ul class="nav">
@@ -91,6 +130,10 @@
         <li class="link">Links!</li>
         <li class="link">Links!</li>
     </ul>
+    <header>
+        <img src="https://source.unsplash.com/random/600x404" alt="">
+        <h1>This is a Heading</h1>
+    </header>
     <br>
     <div class="section1">
         <img src="https://source.unsplash.com/random/300x204 " alt="random image from unsplash">
@@ -142,6 +185,7 @@
         <p>
            rnatur quas dignissimos doloremque voluptatem. Est fugit sapiente veniam officiis dicta, id doloremque
             corporis ab tempora!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi similique, id porro mollitia quos impedit eius deleniti dolorum quaerat perspiciatis.
         </p>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione, excepturi adipisci blanditiis
@@ -155,6 +199,26 @@
 
 
     </div>
+    <div class="section4">
+            <img src="https://source.unsplash.com/random/211x214 " alt="random image from unsplash">
+
+    
+            <p>
+               rnatur quas dignissimos doloremque voluptatem. Est fugit sapiente veniam officiis dicta, id doloremque
+                corporis ab tempora!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione, excepturi adipisci blanditiis
+                praesentium quibusdam quos laborum id. Ut laboriosam voluptates, asperiores placeat iusto consequuntur,
+                ratione nam itaque, quisquam incidunt exercitationem totam recusandae dolor quis deserunt voluptatibus
+                omnis eveniet eligendi enim. Omnis ratione corrupti sequi quae veritatis nobis accusantium, rem voluptatem
+                tenetur libero, beatae necessitatibus id officia adipisci quo. Iusto quis nulla, expedita quidem illo
+                cumque odit voluptate. Saepe distinctio suscipit sunt, corrupti consequatur expedita eum cumque ducimus
+                ratione rem.
+            </p>
+
+    
+        </div>
 </body>
 
 </html>

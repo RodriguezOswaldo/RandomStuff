@@ -16,3 +16,12 @@ Instructions below!!
 https://www.themoviedb.org/?_dc=1555886299
 
 https://developers.themoviedb.org/3/getting-started/introduction
+
+go to movies > now playing  > try out > paste your Key 
+Check out the images, 
+https://image.tmdb.org/t/p/w500/zzWGRw277MNoCs3zhyG3YmYQsXv.jpg
+
+after the last slash replace with yours!
+
+/zzWGRw277MNoCs3zhyG3YmYQsXv.jpg
+

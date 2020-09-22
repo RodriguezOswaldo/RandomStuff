@@ -12,4 +12,7 @@ Icons: https://www.w3schools.com/icons/fontawesome_icons_text.asp
 CSS Shapes http://thewebahead.net/
 
 A pretty cool api that I can use any time for free 
+Instructions below!!
 https://www.themoviedb.org/?_dc=1555886299
+
+https://developers.themoviedb.org/3/getting-started/introduction

@@ -11,7 +11,7 @@ Color: https://coolors.co/
 Icons: <link href="/firstportfolio/fontawesome/css/fontawesome.css" rel="stylesheet">
     <link href="/firstportfolio/fontawesome/css/brands.css" rel="stylesheet">
     <link href="/firstportfolio/fontawesome/css/solid.css" rel="stylesheet">
-    Add the folder to your project
+    Add the fontawesome folder to your project
 CSS Shapes http://thewebahead.net/
 
 A pretty cool api that I can use any time for free 

@@ -8,7 +8,10 @@ Free Images: https://source.unsplash.com/random/300x204
 Free Images: https://picsum.photos/500/300/?image=12
 Fonts: https://fonts.google.com/specimen/Mansalva
 Color: https://coolors.co/
-Icons: https://www.w3schools.com/icons/fontawesome_icons_text.asp
+Icons: <link href="/firstportfolio/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/firstportfolio/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/firstportfolio/fontawesome/css/solid.css" rel="stylesheet">
+    Add the folder to your project
 CSS Shapes http://thewebahead.net/
 
 A pretty cool api that I can use any time for free 

@@ -12,6 +12,11 @@ Icons: <link href="/firstportfolio/fontawesome/css/fontawesome.css" rel="stylesh
     <link href="/firstportfolio/fontawesome/css/brands.css" rel="stylesheet">
     <link href="/firstportfolio/fontawesome/css/solid.css" rel="stylesheet">
     Add the fontawesome folder to your project
+
+Icons: https://ionic.io/ionicons
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 CSS Shapes http://thewebahead.net/
 
 A pretty cool api that I can use any time for free 

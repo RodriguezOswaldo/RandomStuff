@@ -1,0 +1,42 @@
+*{
+    background: #00bcd4;
+}
+.content{
+    display: flex;
+    padding:50px;
+    margin: 40px;
+    background: #5f1760;
+    position: absolute;
+}
+.content .piramid{
+    width: 120px;
+    height: 120px;
+    background: #7a4e15;
+}
+.content .piramid2{
+    width: 170px;
+    height: 170px;
+    background: #7a4e15;
+}
+.content .piramid, .content .piramid2{
+    transform: rotate(45deg);
+    margin-top: 30px;
+    position: relative;
+    top:110px;
+}
+.content .piramid2{
+    top:90px;
+}
+.content .box{
+    width:400px;
+    height: 130px;
+    position: absolute;
+    top:250px;
+    left:0px;
+}
+.car{
+    width: 20px;
+    height: 20px;
+    background: #000;
+    left: 130px;
+}
